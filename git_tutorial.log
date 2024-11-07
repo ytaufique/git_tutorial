@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.14)  7 NOV 2024 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.14)  7 NOV 2024 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -505,27 +505,46 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip55
-) (git_tutorial.aux)
+)
+
+! LaTeX Error: Option clash for package url.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 
+     
+The package url has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [obeyspaces]
+Adding the global options:
+  ,obeyspaces
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(git_tutorial.aux)
 \openout1 = `git_tutorial.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 \c@lstlisting=\count303
 
 (C:\Users\yusufo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
@@ -561,7 +580,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 14.
+Package hyperref Info: Link coloring OFF on input line 15.
  (C:\Users\yusufo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 (C:\Users\yusufo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -573,101 +592,110 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count310
 )
-LaTeX Info: Redefining \ref on input line 14.
-LaTeX Info: Redefining \pageref on input line 14.
-LaTeX Info: Redefining \nameref on input line 14.
+LaTeX Info: Redefining \ref on input line 15.
+LaTeX Info: Redefining \pageref on input line 15.
+LaTeX Info: Redefining \nameref on input line 15.
  (git_tutorial.out) (git_tutorial.out)
 \@outlinefile=\write4
 \openout4 = `git_tutorial.out'.
 
-<lego-steps-commit-messages.png, id=82, 634.37pt x 433.62pt>
+<lego-steps-commit-messages.png, id=86, 634.37pt x 433.62pt>
 File: lego-steps-commit-messages.png Graphic file (type png)
 <use lego-steps-commit-messages.png>
-Package pdftex.def Info: lego-steps-commit-messages.png  used on input line 21.
+Package pdftex.def Info: lego-steps-commit-messages.png  used on input line 23.
 
 (pdftex.def)             Requested size: 345.0pt x 235.8319pt.
-
-Overfull \hbox (71.85199pt too wide) in paragraph at lines 20--22
-\OT1/cmr/m/n/10 code de-vel-oped. [] 
- []
-
-[1
+ [1
 
 {C:/Users/yusufo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./lego-step
-s-commit-messages.png>] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+s-commit-messages.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 33--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 33--39
 
  []
 
 
-Overfull \hbox (5.94502pt too wide) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 33--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--39
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+
+ []
+
+[3]
+Overfull \hbox (5.94502pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/10 The sim-plest work-flow, one of-ten used in in-tro-duc-tory or 
 sin-gle de-vel-oper projects,
  []
 
-[3]
-<diverge.png, id=108, 352.31625pt x 236.38312pt>
+<diverge.png, id=112, 352.31625pt x 236.38312pt>
 File: diverge.png Graphic file (type png)
 <use diverge.png>
-Package pdftex.def Info: diverge.png  used on input line 56.
+Package pdftex.def Info: diverge.png  used on input line 63.
 (pdftex.def)             Requested size: 241.49895pt x 162.02966pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--64
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--64
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
 
  []
 
 [4 <./diverge.png>]
-<merge_picture.jpg, id=115, 933.4875pt x 392.21532pt>
+<merge_picture.jpg, id=118, 933.4875pt x 392.21532pt>
 File: merge_picture.jpg Graphic file (type jpg)
 <use merge_picture.jpg>
-Package pdftex.def Info: merge_picture.jpg  used on input line 70.
+Package pdftex.def Info: merge_picture.jpg  used on input line 77.
 (pdftex.def)             Requested size: 345.0pt x 144.9558pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
+ [5 <./merge_picture.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
-[5 <./merge_picture.jpg>] [6] (git_tutorial.aux)
 
-Package rerunfilecheck Warning: File `git_tutorial.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
-Package rerunfilecheck Info: Checksums for `git_tutorial.out':
-(rerunfilecheck)             Before: 211A4704A25C487A42BACF9FAFF2E209;2788
-(rerunfilecheck)             After:  0DC45316A658C5EE8EDFF26D51153D71;2891.
+ []
+
+[6] (git_tutorial.aux)
+Package rerunfilecheck Info: File `git_tutorial.out' has not changed.
+(rerunfilecheck)             Checksum: 0DC45316A658C5EE8EDFF26D51153D71;2891.
  ) 
 Here is how much of TeX's memory you used:
- 14298 strings out of 478659
- 239658 string characters out of 2845445
- 567125 words of memory out of 3000000
- 32136 multiletter control sequences out of 15000+600000
- 408359 words of font info for 44 fonts, out of 8000000 for 9000
+ 14304 strings out of 478659
+ 239732 string characters out of 2845445
+ 566125 words of memory out of 3000000
+ 32141 multiletter control sequences out of 15000+600000
+ 408981 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,5n,92p,758b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/yusufo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Users/yusufo/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb><C:/Users/yusufo/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmr10.pfb><C:/Users/yusufo/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on git_tutorial.pdf (6 pages, 290944 bytes).
+onts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/yusufo/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on git_tutorial.pdf (6 pages, 304105 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
- 180 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -7,6 +7,7 @@
 \usepackage{pdfpages}
 \usepackage{svg}
 \usepackage{hyperref}
+\usepackage[obeyspaces]{url}
 
 \author{}
 \date{}
@@ -18,6 +19,7 @@ Git is an open source software for version control developed by the same guy tha
 \section{Git Features}
 \subsection{Version Control}
 Version control allows you to create save states (called commits) that keep track of the changes made to your code base over time. These commits should be named according to the updates made to the code base, and give you the ability to return your code to any of these commited saved states for any reason (like breaking your code so it doesn't compile/run). Version control is not only useful as a personal tool, to act as changelog or to return to save states, but is also very useful when teaching the code base to a new user/developer. New users can see when certain features were added to the code, how they were added, and how the code developed.
+\\
 \includegraphics[width=\textwidth]{lego-steps-commit-messages.png}
 
 \subsection{Branches}
@@ -28,7 +30,12 @@ While version control acts as saved states, branches are different universes whe
 Typically there will usually be a Main/Master branch, the latest fully updated and production ready version of the code, and development branches, which come off of the Master branch and merge back once all changes have been tested and approved. Additionally whoever is in charge of the project may want to have extra working branches, such as a test branch for potentially unstable changes or a bugfix branch dedicated to fixing bugs in Master. There is technically no limit to the number of branches you can branch off of a branch, and a significant number of popular open source programs exists as new working branches of abandoned Master branches.
 
 \subsection{gitignore}
-Git allows us to include .gitignore files in a repository, which tells git to ignore changes made to files in particular locations or with particular file endings. 
+Git allows us to include .gitignore files in a repository, which tells git to ignore changes made to files in particular locations or with particular file endings whenever we make commits. For example, if sensitive information like filepaths or client information are stored in a file: \path{.\important_information\important_file.json} we can tell Git to ignore this file, and any changes made to it by either including the following lines in the gitignore file:\\ \\
+\path{important_information\}
+\\ \\ to ignore everything in that folder
+or
+\\ \\ *.json
+\\ \\ to ignore all .json files in the repository.
 
 \subsection{Repositories}
 A repository is the folder that collects all commits and branches related to a single git project. You can import the latest changes made to the branch of your choice from the repository with a "pull" request or upload the branch you are working on with a "push". Additionally, repositories can also act a storage place for readme documents that explain the software as well as any non code files required in order to run the software. This can include almost anything as long as it fits within the maximum storage limit for your project. I have not yet encountered a file type that could not be stored in a GitHub repository.
