@@ -17,7 +17,7 @@
 Git is an open source software for version control developed by the same guy that developed Linux, Linus Torvald. Git was developed to give software developers a protocol and system for version control that is fast and allows for collaborative work. GitHub is the most popular service built on the Git, its main value offering is that it hosts servers and streamlines the process of sharing and collaborating using the Git protocol, as well as having a GUI and desktop program that allows you to use Git without using command line. Git services can be also used separate of GitHub, either in competing services like GitLab, or in a self run Git server you can set up your self.
 \section{Git Features}
 \subsection{Version Control}
-Version control allows you to create save states (called commits) that keep track of the changes made to your code base over time, should be named according to the updates made to the code base,and gives you the ability to return to any of these saved states for any reason (like breaking your code so it doesn't compile/run). Version control is not only useful as a personal tool, to act as changelog or to return to save states, but is also very useful when teaching the code base to a new user/developer. New users can see when certain features were added to the code, how they were added, and how the code developed.
+Version control allows you to create save states (called commits) that keep track of the changes made to your code base over time. These commits should be named according to the updates made to the code base, and give you the ability to return your code to any of these commited saved states for any reason (like breaking your code so it doesn't compile/run). Version control is not only useful as a personal tool, to act as changelog or to return to save states, but is also very useful when teaching the code base to a new user/developer. New users can see when certain features were added to the code, how they were added, and how the code developed.
 \includegraphics[width=\textwidth]{lego-steps-commit-messages.png}
 
 \subsection{Branches}
@@ -33,25 +33,34 @@ There is, however, one distinction that should be made when working in collabora
 \section{Setting Up Git}
 There are a few main ways to interact with repositories on GitHub: GitHub Desktop, through the browser client, or through command line with CLI. CLI is the most flexible and quickest while the GUI in the desktop client is easier and mostly foolproof. The browser client is mostly limited to pull requests, and dealing with administrative account settings. Additionally, most IDEs have built in GitHub functionality with either GUI or text inputs. 
 \subsection{Windows}
-While most linux distros come with Git preinstalled, Windows does not. Installing GitHub desktop Git is installed along with it. The second option is to install GitHub CLI, which allows you to use the linux style Git commands from command line and also installs Git to your system. The third option is to directly download Git, since Git has been open source for almost two decades now there are a few places you can get it. The one recommended on GitHub is https://gitforwindows.org/.
+While most linux distros come with Git preinstalled, Windows does not. Installing GitHub desktop Git is installed along with it. The second option is to install GitHub CLI, which allows you to use the linux style Git commands from command line and also installs Git to your system. The third option is to directly download Git, since Git has been open source for almost two decades now there are a few places you can get it. The one recommended on GitHub is https://gitforwindows.org/. This works with local Git repositories or remotely hosted ones such as GitHub or GitLab.
 \section{Working With Git}
-Once Git is setup and working on your system you can start 
+Once Git is setup and working on your system you can start working with it in any project. Projects that do not require remote repositories (such as individual projects or proof of concepts) can be run using a local Git repository. With git installed one can simply 
 
-\section{Example Git Workflow}
-Standardizing the Git workflow for a project is not necessary, but does help make clear up issues that might arise when attempting to merge changes from multiple different users to a single branch.
-\subsection{Everone Works in Main}
-The simplest workflow, one often used in introductory or single developer projects, is working with a single main branch. In essence, in the best case scenario, this functions similarly to a google sheet, excel online, or overleaf document. With Main acting as both the latest functioning version of the document and the development/working environment. However doing this in Git comes with a few major disadvantages, the largest of which is dealing with uncoordinated pushes from multiple contributors.
+\subparagraph{git init project1} \mbox{}\\ \\
+
+to create a git repository in the working folder and get started. If a remote repository is needed, the project will have to be connected to the remote repository, either manually in command line or through a dedicated UI such as GitHub Desktop. 
+
+\section{Example Git Workflows}
+While standardizing the Git workflow for a project is not necessary, it is very much recommended. A standardized workflow helps to clear up issues that might arise when attempting to merge changes from multiple different users to a single branch.
+\subsection{Everyone Works in Main}
+The simplest workflow, one often used in introductory or single developer projects, is working with a single main branch. In essence and in the best case scenario, this functions similarly to a google sheet, excel online, or overleaf document. Main acts as both the latest functioning version of the document and the development/working/production environment. However doing this in Git comes with a few major disadvantages, the largest of which is dealing with uncoordinated pushes from multiple contributors.
 \paragraph{}
 For example in a simple collaborating scenario with persons A and B, If persons A and B both pull from the main branch at the same time they are free to make changes and commit as much as they want in their local repositories. 
 \label{workflows} As mentioned previously git will not allow you to push changes to a branch if your local version diverges from the branch, for example if someone else pushes a commit after you've made a pull request, as shown below. 
 \begin{center}
 \includegraphics[width=.7\textwidth]{diverge}
 \end{center}
-In this situation, person B will need to rebase by pulling person A's commits into their local repository, integrate these changes locally, then pushing to the remote. One way to do this is as follows
-\paragraph{git pull -- rebase origin main}
-Which will pull all of the latest commits in main into your  
+In this situation, person B will need to rebase by pulling person A's commits into their local repository, integrate these changes locally, then pushing to the remote. One way to do this is as follows:
+
+\paragraph{git pull -- rebase origin main} \mbox{}\\ \\
+Which will pull all of the latest commits in main into your branch, after which you can merge, commit, and push. 
+\\ \\
+A second issue with having only one main branch is the lack of separation between development and production environments. One of the most powerful features of Git is the ability to keep a clean production environment separated from potentially messy production and test environments. Without this separation, it would become necessary to leverage the commit history in order to re-mediate issues such as code breaking changes, rather than having a clean master branch to compare changes to.
 \subsection{Every Feature Gets a Branch}
-A setup that is slightly more complicated to setup, but helps deal with issues that arise when multiple contributors are working on features at the samet ime and the inherent issue of needing to rebase the repository if someone else pushes their commits after you pull. 
+One of the more common setups for medium sized teams, this is a setup that is slightly more complicated, but helps deal with issues that arise when multiple contributors are working on features at the same time, and the inherent issue of needing to rebase the repository if someone else pushes their commits after you pull. \\
+Here a new branch is created whenever there is a ticket to create a new feature or functionality. The changes to implement the new feature are worked on in the feature branch, and are only merged with Main after they have been reviewed and approved. \\
+The main issues that can arise from this setup mainly stem from merges/changes made to the main branch at a point after the feature branch was split. These new main updates will have to be reconciled with the branch by rebasing the feature branch to the newest 'main' before a merge can be completed.
 
 \begin{center}
 \includegraphics[width=\textwidth]{merge_picture.jpg}
@@ -61,15 +70,18 @@ A setup that is slightly more complicated to setup, but helps deal with issues t
 \subsection{git init [repository name]}
 creates a new repository
 \subsection{git add [file name]}
-Stages changes. follow add with whatever changed/added files you want to stage, or just follow with a period to do everything (I only ever do this)
+Stages changes before they are commited. Follow 'add' with the name of the specific changed/added files you want to stage, or just follow with a period to commit everything (This is generally what I would do). \\ \\
+for a specific file
+\subparagraph{git add changedfile.py} \mbox{}\\
+\\ for all files 
 \subparagraph{git add .}
 
 \subsection{git commit -m [commit message]}
-commits the staged changes
+commits the staged changes, don't forget to write a descriptive commit message
 \subsection{git pull}
 makes a pull request
 \subsection{git push}
-pushes current commits to the remote repository
+pushes current commits to the repository
 \subsection{git checkout [branch you want to switch to]}
 Switches branches. If you specify a commit on the current branch you're currently on (and a branch doesn't already exist with that name) then it creates a new branch at that commit point with the name of that commit.
 	\subparagraph{git checkout -b [branch name]}
