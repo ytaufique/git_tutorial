@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.14)  7 NOV 2024 16:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12.10) (preloaded format=pdflatex 2021.12.14)  7 NOV 2024 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -595,60 +595,66 @@ Overfull \hbox (71.85199pt too wide) in paragraph at lines 20--22
 
 {C:/Users/yusufo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./lego-step
 s-commit-messages.png>] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
 
-Overfull \hbox (5.94502pt too wide) in paragraph at lines 47--48
+Overfull \hbox (5.94502pt too wide) in paragraph at lines 51--52
 \OT1/cmr/m/n/10 The sim-plest work-flow, one of-ten used in in-tro-duc-tory or 
 sin-gle de-vel-oper projects,
  []
 
 [3]
-<diverge.png, id=107, 352.31625pt x 236.38312pt>
+<diverge.png, id=108, 352.31625pt x 236.38312pt>
 File: diverge.png Graphic file (type png)
 <use diverge.png>
-Package pdftex.def Info: diverge.png  used on input line 52.
+Package pdftex.def Info: diverge.png  used on input line 56.
 (pdftex.def)             Requested size: 241.49895pt x 162.02966pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--60
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
 
  []
 
 [4 <./diverge.png>]
-<merge_picture.jpg, id=114, 933.4875pt x 392.21532pt>
+<merge_picture.jpg, id=115, 933.4875pt x 392.21532pt>
 File: merge_picture.jpg Graphic file (type jpg)
 <use merge_picture.jpg>
-Package pdftex.def Info: merge_picture.jpg  used on input line 66.
+Package pdftex.def Info: merge_picture.jpg  used on input line 70.
 (pdftex.def)             Requested size: 345.0pt x 144.9558pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--75
+Underfull \hbox (badness 10000) in paragraph at lines 77--79
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
 
  []
 
 [5 <./merge_picture.jpg>] [6] (git_tutorial.aux)
-Package rerunfilecheck Info: File `git_tutorial.out' has not changed.
-(rerunfilecheck)             Checksum: 211A4704A25C487A42BACF9FAFF2E209;2788.
+
+Package rerunfilecheck Warning: File `git_tutorial.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `git_tutorial.out':
+(rerunfilecheck)             Before: 211A4704A25C487A42BACF9FAFF2E209;2788
+(rerunfilecheck)             After:  0DC45316A658C5EE8EDFF26D51153D71;2891.
  ) 
 Here is how much of TeX's memory you used:
- 14297 strings out of 478659
- 239644 string characters out of 2845445
+ 14298 strings out of 478659
+ 239658 string characters out of 2845445
  567125 words of memory out of 3000000
  32136 multiletter control sequences out of 15000+600000
  408359 words of font info for 44 fonts, out of 8000000 for 9000
@@ -659,9 +665,9 @@ Here is how much of TeX's memory you used:
 msfonts/cm/cmbx12.pfb><C:/Users/yusufo/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmr10.pfb><C:/Users/yusufo/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on git_tutorial.pdf (6 pages, 290727 bytes).
+Output written on git_tutorial.pdf (6 pages, 290944 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  180 words of extra memory for PDF output out of 10000 (max. 10000000)
 
